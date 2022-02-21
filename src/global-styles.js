@@ -18,4 +18,9 @@ export const GlobalStyles = createGlobalStyle`
 body{
     background: var(--white);
     }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
 `;

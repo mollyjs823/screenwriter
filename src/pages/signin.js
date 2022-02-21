@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PageWrapper from "../containers/wrapper";
 import { HeaderContainer } from "../containers/header";
@@ -8,8 +8,7 @@ import { useAuth } from "../context/AuthContext";
 export default function SignUp() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
-  const confirmPasswordRef = useRef(null);
-  const { signup } = useAuth();
+  const { login } = useAuth();
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -17,17 +16,14 @@ export default function SignUp() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    if (passwordRef.current.value !== confirmPasswordRef.current.value) {
-      return setError("Passwords do not match");
-    }
     try {
       setError("");
       setLoading(true);
-      await signup(emailRef.current.value, passwordRef.current.value);
+      await login(emailRef.current.value, passwordRef.current.value);
       setLoading(false);
       navigate("/dashboard");
     } catch {
-      setError("Failed to create an account");
+      setError("Failed to sign in");
     }
   }
 
@@ -36,7 +32,7 @@ export default function SignUp() {
       <HeaderContainer></HeaderContainer>
       <Form>
         <Form.Base onSubmit={handleSubmit}>
-          <Form.Title>Sign Up</Form.Title>
+          <Form.Title>Log In</Form.Title>
           <Form.Text>Email</Form.Text>
           <Form.Input
             type="email"
@@ -53,22 +49,16 @@ export default function SignUp() {
             required
           ></Form.Input>
 
-          <Form.Text>Confirm Password</Form.Text>
-          <Form.Input
-            type="password"
-            ref={confirmPasswordRef}
-            placeholder="confirm password"
-            required
-          ></Form.Input>
-
           {error && <Form.Error>{error}</Form.Error>}
 
           <Form.Submit type="submit" disabled={loading}>
-            sign up
+            log in
           </Form.Submit>
 
+          <Link to="/forgot-passwd">Forgot Password?</Link>
+
           <Form.TextSmall>
-            Already have an account? <Link to="/signin">Log In</Link>
+            Need an account? <Link to="/signup">Sign Up</Link>
           </Form.TextSmall>
         </Form.Base>
       </Form>

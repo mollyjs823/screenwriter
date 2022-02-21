@@ -42,7 +42,7 @@ export const Logo = styled.img`
   margin-bottom: 15px;
 `;
 
-export const Button = styled.a`
+export const Button = styled.p`
   text-decoration: none;
   color: var(--white);
   border-radius: 20px;
