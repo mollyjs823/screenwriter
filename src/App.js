@@ -1,6 +1,11 @@
 import React from "react";
-import { Home } from "./pages";
+import { AuthProvider } from "./context/AuthContext";
+import { Home, SignUp } from "./pages";
 
 export default function App() {
-  return <Home />;
+  return (
+    <AuthProvider>
+      <SignUp />
+    </AuthProvider>
+  );
 }

@@ -6,7 +6,9 @@ export function HeaderContainer({ children }) {
     <Header>
       <Header.Navigation>
         <Header.NavContainer width={"50%"}>
-          <Header.Logo src={`/logo.svg`} />
+          <a href="#">
+            <Header.Logo src={`/logo.svg`} />
+          </a>
           <Header.NavItem href="#">about</Header.NavItem>
           <Header.NavItem href="#">contact</Header.NavItem>
           <Header.NavItem href="#">pricing</Header.NavItem>
