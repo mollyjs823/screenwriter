@@ -1,9 +1,8 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Hero } from "../components";
 import { Link } from "react-router-dom";
 
 export function HeroContainer({ children }) {
-  //var userEmail = "";
   const [email, setEmail] = useState("");
   return (
     <Hero>
@@ -14,6 +13,7 @@ export function HeroContainer({ children }) {
       </Hero.SubHeading>
 
       <Hero.Form>
+        <Hero.FormImg src={"/icon-email.svg"} />
         <Hero.Input
           placeholder="Enter your email"
           onChange={(evt) => {

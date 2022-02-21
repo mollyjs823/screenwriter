@@ -20,7 +20,7 @@ export const NavContainer = styled.div`
   align-items: center;
 `;
 
-export const NavItem = styled.a`
+export const NavItem = styled.p`
   margin-left: 3em;
   color: var(--blue);
   text-decoration: none;
@@ -53,6 +53,12 @@ export const Button = styled.p`
 
   padding: 0.5em 1em;
   margin-left: 2em;
+
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 70%;
+  }
 `;
 
 export const ButtonIcon = styled.img`

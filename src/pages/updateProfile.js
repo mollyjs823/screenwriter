@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
 
 import PageWrapper from "../containers/wrapper";
-import { HeaderContainer } from "../containers/header";
+import { DashHeaderContainer } from "../containers/dashHeader";
 import { Form } from "../components";
 
 export default function UpdateProfile() {
@@ -46,7 +46,7 @@ export default function UpdateProfile() {
 
   return (
     <PageWrapper>
-      <HeaderContainer></HeaderContainer>
+      <DashHeaderContainer></DashHeaderContainer>
       <Form>
         <Form.Base onSubmit={handleSubmit}>
           <Form.Title>Update Profile</Form.Title>
@@ -80,7 +80,7 @@ export default function UpdateProfile() {
           </Form.Submit>
 
           <Form.TextSmall>
-            Cancel <Link to="/signin">Log In</Link>
+            <Link to="/dashboard">Cancel</Link>
           </Form.TextSmall>
         </Form.Base>
       </Form>

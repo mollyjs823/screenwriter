@@ -5,10 +5,9 @@ export const Container = styled.div`
   grid-column: 2 / -2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
-  min-height: 660px;
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(5px);
   border-radius: 5px;
@@ -50,7 +49,7 @@ export const Text = styled.p`
 
 export const TextSmall = styled.p`
   margin-top: 0.5em;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: var(--lt-gray);
 `;
 

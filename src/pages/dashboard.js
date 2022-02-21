@@ -1,14 +1,13 @@
 import React from "react";
 import PageWrapper from "../containers/wrapper";
-import { HeaderContainer } from "../containers/header";
+import { DashHeaderContainer } from "../containers/dashHeader";
 import { DashboardContainer } from "../containers/dashboard";
 
 export default function Dash() {
   return (
     <PageWrapper>
-      <HeaderContainer>
-        <DashboardContainer></DashboardContainer>
-      </HeaderContainer>
+      <DashHeaderContainer></DashHeaderContainer>
+      <DashboardContainer></DashboardContainer>
     </PageWrapper>
   );
 }

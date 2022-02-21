@@ -15,7 +15,6 @@ export default function SignUp() {
   const navigate = useNavigate();
   const location = useLocation();
   const { from } = location.state ? location.state : "";
-  console.log({ from });
 
   async function handleSubmit(e) {
     e.preventDefault();

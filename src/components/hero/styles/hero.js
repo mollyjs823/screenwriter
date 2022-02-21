@@ -37,8 +37,38 @@ export const SubHeading = styled.p`
   align-self: flex-start;
 `;
 
-export const Form = styled.form``;
+export const Form = styled.form`
+  padding: 0.5em 0.7em;
+  background: var(--white);
+  border-radius: 30px;
+  filter: drop-shadow(5px 10px 8px rgba(0, 0, 0, 0.2));
 
-export const Input = styled.input``;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-export const Submit = styled.button``;
+export const FormImg = styled.img`
+  filter: invert(61%) sepia(0%) saturate(1%) hue-rotate(230deg) brightness(93%)
+    contrast(85%);
+  padding-right: 1em;
+`;
+
+export const Input = styled.input`
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
+export const Submit = styled.button`
+  border: 0;
+  padding: 0.5em 1em;
+  background: var(--blue);
+  color: var(--white);
+  border-radius: 20px;
+  font-size: 1.1em;
+  font-family: "Source Code Pro", monospace;
+`;

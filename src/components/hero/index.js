@@ -4,6 +4,7 @@ import {
   Heading,
   SubHeading,
   Form,
+  FormImg,
   Input,
   Submit,
 } from "./styles/hero";
@@ -22,6 +23,10 @@ Hero.SubHeading = function HeroSubHeading({ children, ...restProps }) {
 
 Hero.Form = function HeroForm({ children, ...restProps }) {
   return <Form {...restProps}>{children}</Form>;
+};
+
+Hero.FormImg = function HeroFormImg({ children, ...restProps }) {
+  return <FormImg {...restProps}>{children}</FormImg>;
 };
 
 Hero.Input = function HeroInput({ children, ...restProps }) {
