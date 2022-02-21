@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 import PageWrapper from "../containers/wrapper";
 import { HeaderContainer } from "../containers/header";
+import { FooterContainer } from "../containers/footer";
 import { Form } from "../components";
 
 export default function ForgotPassword() {
@@ -56,6 +57,7 @@ export default function ForgotPassword() {
           </Form.TextSmall>
         </Form.Base>
       </Form>
+      <FooterContainer></FooterContainer>
     </PageWrapper>
   );
 }

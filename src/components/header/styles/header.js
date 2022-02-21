@@ -25,6 +25,7 @@ export const NavItem = styled.p`
   color: var(--blue);
   text-decoration: none;
   font-weight: 600;
+  font-family: "Source Code Pro", monospace;
   padding: 0.5em 1em;
   border-radius: 20px;
   transition: 0.2s ease;
@@ -44,6 +45,7 @@ export const Logo = styled.img`
 
 export const Button = styled.p`
   text-decoration: none;
+  font-family: "Source Code Pro", monospace;
   color: var(--white);
   border-radius: 20px;
 

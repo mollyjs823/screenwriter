@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PageWrapper from "../containers/wrapper";
 import { HeaderContainer } from "../containers/header";
+import { FooterContainer } from "../containers/footer";
 import { Form } from "../components";
 import { useAuth } from "../context/AuthContext";
 
@@ -62,6 +63,7 @@ export default function SignUp() {
           </Form.TextSmall>
         </Form.Base>
       </Form>
+      <FooterContainer></FooterContainer>
     </PageWrapper>
   );
 }

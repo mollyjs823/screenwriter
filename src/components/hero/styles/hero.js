@@ -7,6 +7,7 @@ export const Container = styled.div`
   flex-flow: column nowrap;
   align-items: flex-start;
   justify-content: center;
+  user-select: none;
 `;
 
 export const Heading = styled.h2`
@@ -71,4 +72,5 @@ export const Submit = styled.button`
   border-radius: 20px;
   font-size: 1.1em;
   font-family: "Source Code Pro", monospace;
+  cursor: pointer;
 `;
