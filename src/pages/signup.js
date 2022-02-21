@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import PageWrapper from "../containers/wrapper";
 import { HeaderContainer } from "../containers/header";
 import { Form } from "../components";
@@ -13,6 +13,9 @@ export default function SignUp() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const { from } = location.state ? location.state : "";
+  console.log({ from });
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -42,6 +45,7 @@ export default function SignUp() {
             type="email"
             ref={emailRef}
             placeholder="email"
+            defaultValue={from}
             required
           ></Form.Input>
 
