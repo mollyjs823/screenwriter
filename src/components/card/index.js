@@ -7,7 +7,10 @@ import {
   List,
   Bullet,
   Button,
-  Icons,
+  IconContainer,
+  IconGroup,
+  IconDesc,
+  Icon,
 } from "./styles/card";
 
 export default function Card({ children, ...restProps }) {
@@ -45,6 +48,22 @@ Card.Button = function CardButton({ children, ...restProps }) {
   return <Button {...restProps}>{children}</Button>;
 };
 
-Card.Icons = function CardIcons({ children, ...restProps }) {
-  return <Icons {...restProps}>{children}</Icons>;
+Card.IconContainer = function CardIconContainer({ children, ...restProps }) {
+  return <IconContainer {...restProps}>{children}</IconContainer>;
+};
+
+Card.IconGroup = function CardIconGroup({ children, ...restProps }) {
+  return <IconGroup {...restProps}>{children}</IconGroup>;
+};
+
+Card.IconDesc = function CardIconDesc({ children, ...restProps }) {
+  return <IconDesc {...restProps}>{children}</IconDesc>;
+};
+
+Card.Icon = function CardIcon({ children, src, ...restProps }) {
+  return (
+    <Icon src={src} {...restProps}>
+      {children}
+    </Icon>
+  );
 };

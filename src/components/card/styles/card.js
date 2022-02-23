@@ -68,4 +68,31 @@ export const Button = styled.p`
   border-radius: 20px;
 `;
 
-export const Icons = styled.div``;
+export const IconContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 1em;
+  justify-items: center;
+  align-items: center;
+  margin: 0 3em;
+  padding 1em;
+`;
+
+export const IconGroup = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const IconDesc = styled.p`
+  color: var(--lt-gray);
+  padding: 1em;
+`;
+
+export const Icon = styled.img`
+  filter: invert(61%) sepia(0%) saturate(1%) hue-rotate(230deg) brightness(93%)
+    contrast(85%);
+  width: 100px;
+`;

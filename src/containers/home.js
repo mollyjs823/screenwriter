@@ -38,6 +38,24 @@ export function HeroContainer({ children }) {
           </Card.List>
           <Card.Button>learn more</Card.Button>
         </Card.ColumnContainer>
+        <Card.IconContainer>
+          <Card.IconGroup>
+            <Card.Icon src="/icon-build.svg" />
+            <Card.IconDesc>draft</Card.IconDesc>
+          </Card.IconGroup>
+          <Card.IconGroup>
+            <Card.Icon src="/icon-pencil.svg" />
+            <Card.IconDesc>script</Card.IconDesc>
+          </Card.IconGroup>
+          <Card.IconGroup>
+            <Card.Icon src="/icon-note.svg" />
+            <Card.IconDesc>compile</Card.IconDesc>
+          </Card.IconGroup>
+          <Card.IconGroup>
+            <Card.Icon src="/icon-shutter.svg" />
+            <Card.IconDesc>shots</Card.IconDesc>
+          </Card.IconGroup>
+        </Card.IconContainer>
       </Card>
     </>
   );
