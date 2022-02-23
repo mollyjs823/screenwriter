@@ -66,6 +66,12 @@ export const Button = styled.p`
   padding: 0.5em 2em;
   margin-top: 1em;
   border-radius: 20px;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    letter-spacing: 2px;
+  }
 `;
 
 export const IconContainer = styled.div`

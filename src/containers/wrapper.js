@@ -8,8 +8,15 @@ const Wrapper = styled.div`
   background-size: 100%;
 `;
 
-export default function PageWrapper({ image, children }) {
+export default function PageWrapper({ image, position, children }) {
   return (
-    <Wrapper style={{ backgroundImage: `url(${image})` }}>{children}</Wrapper>
+    <Wrapper
+      style={{
+        backgroundImage: `url(${image})`,
+        backgroundPositionY: `${position}`,
+      }}
+    >
+      {children}
+    </Wrapper>
   );
 }

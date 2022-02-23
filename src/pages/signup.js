@@ -35,7 +35,7 @@ export default function SignUp() {
   }
 
   return (
-    <PageWrapper>
+    <PageWrapper image="/one-gradient.svg" position="bottom">
       <HeaderContainer></HeaderContainer>
       <Form>
         <Form.Base onSubmit={handleSubmit}>

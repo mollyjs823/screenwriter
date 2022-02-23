@@ -6,7 +6,7 @@ import { FooterContainer } from "../containers/footer";
 
 export default function Home() {
   return (
-    <PageWrapper image="/home-gradient.svg">
+    <PageWrapper image="/home-gradient.svg" position="top">
       <HeaderContainer></HeaderContainer>
       <HeroContainer></HeroContainer>
       <FooterContainer></FooterContainer>

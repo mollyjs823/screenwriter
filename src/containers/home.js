@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Hero, Card } from "../components";
+import { Hero, Card, VerticalList } from "../components";
 import { Link } from "react-router-dom";
 
 export function HeroContainer({ children }) {
@@ -57,6 +57,36 @@ export function HeroContainer({ children }) {
           </Card.IconGroup>
         </Card.IconContainer>
       </Card>
+      <VerticalList>
+        <VerticalList.Heading>Membership Levels</VerticalList.Heading>
+        <VerticalList.List>
+          <VerticalList.ListItem>
+            <VerticalList.ListItemIcon src="/icon-shutter.svg" />
+            <VerticalList.ListItemNumber>1</VerticalList.ListItemNumber>
+            <VerticalList.ListItemText>
+              Free: Full access to script, storyboard, and shot list creation
+              tools
+            </VerticalList.ListItemText>
+          </VerticalList.ListItem>
+
+          <VerticalList.ListItem>
+            <VerticalList.ListItemIcon src="/icon-shutter.svg" />
+            <VerticalList.ListItemNumber>2</VerticalList.ListItemNumber>
+            <VerticalList.ListItemText>
+              Silver Member: Full access to all tools, up to 5 projects
+            </VerticalList.ListItemText>
+          </VerticalList.ListItem>
+
+          <VerticalList.ListItem>
+            <VerticalList.ListItemIcon src="/icon-shutter.svg" />
+            <VerticalList.ListItemNumber>3</VerticalList.ListItemNumber>
+            <VerticalList.ListItemText>
+              Gold Member: Full access to all tools, unlimited projects
+            </VerticalList.ListItemText>
+          </VerticalList.ListItem>
+        </VerticalList.List>
+        <VerticalList.Button>get started!</VerticalList.Button>
+      </VerticalList>
     </>
   );
 }

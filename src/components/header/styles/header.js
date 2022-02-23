@@ -29,6 +29,7 @@ export const NavItem = styled.p`
   padding: 0.5em 1em;
   border-radius: 20px;
   transition: 0.2s ease;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--blue);

@@ -73,4 +73,9 @@ export const Submit = styled.button`
   font-size: 1.1em;
   font-family: "Source Code Pro", monospace;
   cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    letter-spacing: 2px;
+  }
 `;
