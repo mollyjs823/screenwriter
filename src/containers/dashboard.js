@@ -7,8 +7,8 @@ export function DashboardContainer({ children }) {
 
   return (
     <Dashboard>
-      <h2>Dashboard</h2>
-      <h3>Welcome {currentUser.email}!</h3>
+      <Dashboard.Header>Dashboard</Dashboard.Header>
+      <Dashboard.SubHeading>Welcome {currentUser.email}!</Dashboard.SubHeading>
       {children}
     </Dashboard>
   );
