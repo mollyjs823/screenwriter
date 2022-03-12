@@ -6,3 +6,5 @@ export { default as Dashboard } from "./dashboard";
 
 export { default as Card } from "./card";
 export { default as VerticalList } from "./vertical-list";
+
+export { default as RichTextEditor } from './editor';
