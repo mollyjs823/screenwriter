@@ -171,8 +171,6 @@ class RichTextEditor extends React.Component {
 
   var INLINE_STYLES = [
     {label: 'Sequence', style: 'BOLD'},
-    // {label: 'Italic', style: 'ITALIC'},
-    // {label: 'Underline', style: 'UNDERLINE'},
   ];
 
   const InlineStyleControls = (props) => {
